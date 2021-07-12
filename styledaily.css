@@ -70,16 +70,18 @@ body {
   font-family: 'MaruBuri-Regular';
 }
 
-@media screen and (min-width: 896px){
+@media screen and (max-width: 640px){
   a.example{
-    font-size: 45px;
+    font-size: 4vw;
   }
 }
+/*
 @media screen and (max-width: 895px){
   a.example{
     font-size: 3vw;
   }
 }
+*/
 
 .navbar ul li a:hover {
   color: white;
