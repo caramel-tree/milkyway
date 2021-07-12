@@ -72,16 +72,16 @@ body {
 
 @media screen and (max-width: 640px){
   a.example{
-    font-size: 4vw;
+    font-size: 45px;
   }
 }
-/*
+
 @media screen and (max-width: 895px){
   a.example{
     font-size: 3vw;
   }
 }
-*/
+
 
 .navbar ul li a:hover {
   color: white;
