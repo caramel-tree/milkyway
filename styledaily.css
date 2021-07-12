@@ -46,10 +46,8 @@ body {
 .navbar ul{
   text-decoration: none;
   float: right;
-  margin: 11;
-
+  margin: 0;
   padding: 10;
-
   display: flex;
 }
 
@@ -59,18 +57,21 @@ body {
 }
 
 .navbar ul li a{
-  display: block;
   text-decoration: none;
-  text-transform: uppercase;
   color: #5AA86B;
-  padding: 5px;
-  margin-right: 20px;
-  line-height: 30px;
+  padding: 15px;
+  margin: 0;
   transition: .5s;
   font-family: 'MaruBuri-Regular';
+
+
+  /*
+  line-height: 30px;
+  text-transform: uppercase;
+  */
 }
 
-@media screen and (max-width: 640px){
+@media screen and (min-width: 640px){
   a.example{
     font-size: 45px;
   }
@@ -78,7 +79,7 @@ body {
 
 @media screen and (max-width: 895px){
   a.example{
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
