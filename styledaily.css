@@ -63,9 +63,9 @@ body {
   margin: 0;
   transition: .5s;
   font-family: 'MaruBuri-Regular';
-  font-weight: bold;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 2px gray;
   /*
+  font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
   */
