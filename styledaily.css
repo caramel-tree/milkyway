@@ -55,20 +55,31 @@ body {
 
 .navbar ul li{
   list-style: none;
+
 }
 
 .navbar ul li a{
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: 	darkgreen;
+  color: #5AA86B;
   padding: 5px;
   margin-right: 20px;
   line-height: 30px;
   transition: .5s;
   font-family: 'MaruBuri-Regular';
-	font-size: 30px;
 }
 
+@media screen and (min-width: 896px){
+  a.example{
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 895px){
+  a.example{
+    font-size: 4vw;
+  }
+}
 
 .navbar ul li a:hover {
   color: white;
