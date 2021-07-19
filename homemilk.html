@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styledaily.css">
-
   </head>
 
   <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
@@ -18,8 +17,20 @@
       </ul>
     </nav>
 
-    <div class="floating-btn" onclick="location.href='tel:111-123-1234'">
-      <img src="baseline_phone_white_36dp.png"/></div>
+    <div class="fab"><img src="baseline_close_black_24dp.png"/></div>
+    <div class="box">
+      <a class="fltng btn1" onclick="location.href='tel:111-123-1234'">
+        <img src="baseline_phone_white_36dp.png"/></a>
+      <a class="fltng btn2" onclick="location.href='sms:111-123-1234'">
+        <img src="baseline_mail_white_36dp.png"/></a>
+    </div>
+
+    <script>
+      document.querySelector('.fab').addEventListener('click', function(e){
+        document.querySelector('.box').classList.toggle('box-active');
+        document.querySelector('.fab').classList.toggle('fab-active');
+      });
+    </script>
 
       <picture>
         <source media="(max-width: 799px)" srcset="testing1.jpg">
