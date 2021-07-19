@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styledaily.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   </head>
 
   <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
@@ -18,7 +18,20 @@
       </ul>
     </nav>
 
-    <button class="material-icons floating-btn">phone</button>
+    <div class="fab"><img src="baseline_close_black_24dp.png"/></div>
+    <div class="box">
+      <a class="fltng btn1" onclick="location.href='tel:111-123-1234'">
+        <img src="baseline_phone_white_36dp.png"/></a>
+      <a class="fltng btn2" onclick="location.href='sms:111-123-1234'">
+        <img src="baseline_mail_white_36dp.png"/></a>
+    </div>
+
+    <script>
+      document.querySelector('.fab').addEventListener('click', function(e){
+        document.querySelector('.box').classList.toggle('box-active');
+        document.querySelector('.fab').classList.toggle('fab-active');
+      });
+    </script>
 
     <img src="select_coffee2/IMG_5098.jpg" width="100%" loading="lazy"/>
     <img src="select_coffee2/IMG_5078.jpg" width="100%" loading="lazy"/>
