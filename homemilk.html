@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styledaily.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
@@ -18,14 +17,60 @@
       </ul>
     </nav>
 
-    <button class="material-icons floating-btn">phone</button>
+    <div class="fab"><img src="baseline_close_black_24dp.png"/></div>
+    <div class="box">
+      <a class="fltng btn1" onclick="location.href='tel:111-123-1234'">
+        <img src="baseline_phone_white_36dp.png"/></a>
+      <a class="fltng btn2" onclick="location.href='sms:111-123-1234'">
+        <img src="baseline_mail_white_36dp.png"/></a>
+    </div>
 
+    <script>
+      document.querySelector('.fab').addEventListener('click', function(e){
+        document.querySelector('.box').classList.toggle('box-active');
+        document.querySelector('.fab').classList.toggle('fab-active');
+      });
+    </script>
+
+<<<<<<< HEAD
     <img src="select_homemilk/IMG_5835lightup.jpg" width="100%" loading="lazy"/>
     <img src="select_homemilk/IMG_5400down.jpg" width="100%" loading="lazy"/>
     <img src="select_homemilk/IMG_5441down.jpg" width="100%" loading="lazy"/>
     <img src="select_homemilk/IMG_5421down.jpg" width="100%" loading="lazy"/>
     <img src="select_homemilk/IMG_5786down.jpg" width="100%" loading="lazy"/>
     <img src="select_homemilk/IMG_5771color.jpg" width="100%" loading="lazy"/>
+=======
+      <picture>
+        <source media="(max-width: 799px)" srcset="testing1.jpg">
+        <source media="(min-width: 800px)" srcset="select_homemilk/IMG_5835lightup.jpg">
+        <img src="select_homemilk/IMG_5835lightup.jpg" width="100%" loading="lazy"//>
+      </picture>
+      <picture>
+        <source media="(max-width: 799px)" srcset="testing2.jpg">
+        <source media="(min-width: 800px)" srcset="select_homemilk/IMG_5400down.jpg">
+        <img src="select_homemilk/IMG_5400down.jpg" width="100%" loading="lazy"//>
+      </picture>
+      <picture>
+        <source media="(max-width: 799px)" srcset="testing3.jpg">
+        <source media="(min-width: 800px)" srcset="select_homemilk/IMG_5441down.jpg">
+        <img src="select_homemilk/IMG_5441down.jpg" width="100%" loading="lazy"/>
+      </picture>
+      <picture>
+        <source media="(max-width: 799px)" srcset="testing4.jpg">
+        <source media="(min-width: 800px)" srcset="select_homemilk/IMG_5421down.jpg">
+        <img src="select_homemilk/IMG_5421down.jpg" width="100%" loading="lazy"/>
+      </picture>
+      <picture>
+        <source media="(max-width: 799px)" srcset="testing5.jpg">
+        <source media="(min-width: 800px)" srcset="select_homemilk/IMG_5786down.jpg">
+        <img src="select_homemilk/IMG_5786down.jpg" width="100%" loading="lazy"/>
+      </picture>
+      <picture>
+        <source media="(max-width: 799px)" srcset="testing6.jpg">
+        <source media="(min-width: 800px)" srcset="select_homemilk/IMG_5771color.jpg">
+        <img src="select_homemilk/IMG_5771color.jpg" width="100%" loading="lazy"/>
+      </picture>
+>>>>>>> 59b84675455964b202d014ea18cc74a78e38226a
 
     <picture>
       <source media="(max-width: 799px)" srcset="select_homemilk/IMG_6145down.jpg">
