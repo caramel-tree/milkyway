@@ -1,45 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-    content="width=device-width" initial-scale=1.0>
+  <title> walk together </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styledaily.css">
 
-    <title> grid and hover </title>
-    <link rel="stylesheet" href="ghstyle.css">
-  </head>
+  <script src="nav.js"></script>
+  <script src="main.js"></script>
 
-  <body>
-      <div class="container">
-        <div class="box">
-            <a href="low.html">
-          <img src="select_low/IMG_3272down.jpg" width="100%">
-          <img class="hover-img" src="select_dawn/IMG_3126.jpg" width="100%">
-            </a>
+  <style>
+#grid1{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -1rem;
+
+}
+
+#grid2{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -1rem;
+
+}
+
+  </style>
+</head>
+  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+    <div class="fab"><img src="baseline_close_black_24dp.png"/></div>
+    <div class="box">
+      <a class="fltng btn1" onclick="location.href='tel:111-123-1234'">
+        <img src="baseline_phone_white_36dp.png"/></a>
+      <a class="fltng btn2" onclick="location.href='sms:111-123-1234'">
+        <img src="baseline_mail_white_36dp.png"/></a>
+    </div>
+    <script src="button.js"></script>
+
+    <div class="container">
+    <nav class="navbar">
+      <ul class="menu" id="menu">
+        <li><a class="example" href="#저지방">저지방</a></li>
+        <li><a class="example" href="#나백100%">나백100%</a></li>
+        <li><a class="example" href="#홈밀크">홈밀크</a></li>
+        <li><a class="example" href="#커피포리">커피포리</a></li>
+      </ul>
+    </nav>
+
+    <div id=grid1>
+        <div>
+          <a href="low.html">
+          <picture>
+            <source media="(max-width: 799px)" srcset="select_low/IMG_5988darkengray.jpg">
+            <source media="(min-width: 800px)" srcset="select_low/IMG_3272down.jpg">
+            <img src="select_low/IMG_3269down.jpg" width="100%" loading="lazy"/>
+          </picture> </a>
+
+
+       </div>
+        <div>
+        <a href="100.html">
+          <picture>
+            <source media="(max-width: 799px)" srcset="select_100/IMG_5988addgreen2.jpg">
+            <source media="(min-width: 800px)" srcset="select_100/IMG_5987downcolor2.jpg">
+            <img src="select_100/IMG_5988downclose.jpg" width="100%" loading="lazy"/>
+          </picture> </a>
+
+        </a>
+      </div>
+    </div>
+
+      <div id=grid2>
+        <div> <a href="homemilk.html">
+        <picture>
+          <source media="(max-width: 799px)" srcset="select_homemilk/IMG_5988color.jpg">
+          <source media="(min-width: 800px)" srcset="select_homemilk/IMG_5441down.jpg">
+          <img src="select_homemilk/IMG_5476down.jpg" width="100%" loading="lazy"/>
+        </picture> </a>
+         </div>
+
+        <div> <a href="coffee.html">
+          <picture>
+            <source media="(max-width: 799px)" srcset="select_coffee2/IMG_4833down.jpg">
+            <source media="(min-width: 800px)" srcset="select_coffee2/IMG_4817down.jpg">
+            <img src="select_coffee2/IMG_4833.jpg" width="100%" loading="lazy"/>
+          </picture> </a>
         </div>
-
-
-      <div class="box">
-          <a href="100.html">
-        <img src="select_100/IMG_5987downcolor2.jpg" width="100%">
-        <img class="hover-img" src="select_dawn/IMG_4186down.jpg" width="100%">
-          </a>
       </div>
 
-      <div class="box">
-          <a href="homemilk.html">
-        <img src="select_homemilk/IMG_5441down.jpg" width="100%">
-        <img class="hover-img" src="select_homemilk/IMG_5877down.jpg" width="100%">
-          </a>
-      </div>
-
-      <div class="box">
-          <a href="coffee.html">
-        <img src="select_coffee2/IMG_4818down.jpg" width="100%">
-        <img class="hover-img" src="select_coffee2/IMG_5093down.jpg" width="100%">
-          </a>
-      </div>
-
-      </div>
   </body>
-  </html>
+
+</html>
