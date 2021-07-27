@@ -8,7 +8,7 @@
 }
 
 
-.container {
+.container_box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,11 +18,10 @@
 }
 
 
-.container .box{
+.container_box .boxx{
   position: relative;
   width:50%;
   height: 50vh;
-  border: 2px solid grey;
   display: inline-block;
   overflow: hidden;
 }
@@ -57,10 +56,10 @@ object-fit: cover;
 }
 */
 
-.box:hover img{
+.boxx:hover img{
   opacity: 1;
 }
-.box:hover .hover-img{
+.boxx:hover .hover-img{
   opacity: 1;
 }
 *
