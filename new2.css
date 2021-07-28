@@ -1,6 +1,4 @@
 *{
-  margin :0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -20,16 +18,24 @@
   overflow: hidden;
 }
 
-img{
+.killbox .boxes img{
   height: 100%;
   transition:all linear 1s;
   object-fit: cover;
+  cursor: pointer;
+}
+.box1a{
   object-position: right;
 }
-
+.box2a{
+  object-position: right;
+}
+.box3a{
+  object-position: right;
+}
 .fade-out {
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .fade-in-delay {
@@ -39,4 +45,6 @@ img{
 
 .hide {
   display: none;
-}*
+}
+
+*
