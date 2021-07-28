@@ -31,7 +31,10 @@
   object-position: right;
 }
 .box3a{
-  object-position: right;
+  object-position: right 35%;
+}
+.box4a{
+  object-position: center 35%;
 }
 .fade-out {
   opacity: 0;
