@@ -1,14 +1,11 @@
-*
-
-{
+*{
   margin :0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
 }
 
 
-.container_box {
+.killbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +15,7 @@
 }
 
 
-.container_box .boxx{
+.killbox .boxes{
   position: relative;
   width:50%;
   height: 50vh;
@@ -27,8 +24,7 @@
 }
 
 
-img{
-  width: 100%;
+.killbox .boxes img{
   height: 100%;
   transition:all linear 1s;
   object-fit: cover;
@@ -56,10 +52,10 @@ object-fit: cover;
 }
 */
 
-.boxx:hover img{
+.boxes:hover img{
   opacity: 1;
 }
-.boxx:hover .hover-img{
+.boxes:hover .hover-img{
   opacity: 1;
 }
 *
