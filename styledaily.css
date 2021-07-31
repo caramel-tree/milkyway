@@ -179,3 +179,21 @@ body {
 .fab-active img{
   transform: rotate(270deg);
 }
+
+.wrapper{
+  margin: 0;
+  padding: 0;
+  max-height: 1000px;
+  border: 1px solid white;
+  display: flex;
+  overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+ width: 0;
+}
+
+.wrapper .item{
+ min-width: 150%;
+  height:100%;
+}
