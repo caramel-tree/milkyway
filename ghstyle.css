@@ -2,14 +2,242 @@
   box-sizing: border-box;
 }
 
-
-.killbox {
-  display: flex;
+#home_container {
+  position: absolute;
+  display: absolute;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   height:100%;
   width:100%;
+}
+
+
+
+#firstlow{
+  position: absolute;
+  width:50%;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#first100{
+  position: absolute;
+  width:50%;
+  height: 50vh;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+}
+#firsthome{
+  position: absolute;
+  width:50%;
+  height: 50vh;
+  top: 50%;
+  left: 0;
+  overflow: hidden;
+}
+#firstcoffee{
+  position: absolute;
+  width:50%;
+  height: 50vh;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+
+
+#secondlow{
+  position: absolute;
+  background-image: url("select_low/IMG_5988darkengray.jpg");
+  background-size: cover;
+  background-position: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+#second100{
+  position: absolute;
+  background-image: url("select_100/IMG_5988addgreen2.jpg");
+  background-size: cover;
+  background-position: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+#secondhome{
+  position: absolute;
+  background-image: url("select_homemilk/IMG_5988color.jpg");
+  background-size: cover;
+  background-position: right 35%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+#secondcoffee{
+  position: absolute;
+  background-image: url("select_coffee2/IMG_4833down.jpg");
+  background-size: cover;
+  background-position: center 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+
+
+
+
+#thirdlow{
+  position: absolute;
+  background-image: url("select_dawn/IMG_3126cropdown.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+#third100{
+  position: absolute;
+  background-image: url("select_dawn/IMG_4186down.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+#thirdhome{
+  position: absolute;
+  background-image: url("select_homemilk/IMG_5843down.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+#thirdcoffee{
+  position: absolute;
+  background-image: url("select_coffee2/IMG_5093down.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  -webkit-transition:all 200ms 0ms ease-in;
+  transition:all 200ms 0ms ease-in;
+}
+
+.anim_element{
+  animation-duration:250ms;
+  transition-timing-function:ease-in;
+  animation-fill-mode:both;
+  -webkit-animation-animation-duration:250ms;
+  -webkit-animation-transition-timing-function:ease-in;
+  -webkit-animation-animation-fill-mode:both;
+}
+@keyframes fadeInUp{
+  0%{
+    opacity:0;
+    transform:translate3d(0,100%,0);
+  }
+  100%{
+    opacity:1;
+    transform:none;
+  }
+}
+@keyframes fadeInDown{
+  0%{
+    opacity:0;
+    transform:translate3d(0,-100%,0);
+  }
+  100%{
+    opacity:1;
+    transform:none;
+  }
+}
+  @keyframes fadeOutDown{
+    0%{
+      opacity:1;
+      transform:none;
+    }
+    100%{
+      opacity:0;
+      transform:translate3d(0,100%,0);
+    }
+  }
+@keyframes fadeOutUp{
+  0%{
+    opacity:1;
+    transform:none;
+  }
+  100%{
+    opacity:0;
+    transform:translate3d(0,-100%,0);
+  }
+}
+.anim_fadeinup{
+  animation-name: fadeInUp;
+}
+.anim_fadeindown{
+  animation-name: fadeInDown;
+}
+.anim_fadeoutdown{
+  animation-name: fadeOutDown;
+}
+.is-exiting .anim_fadeinup{
+  animation-name: fadeOutDown;
+}
+.is-exiting .anim_fadeindown{
+  animation-name: fadeOutUp;
+}
+
+
+#firstlow:hover > #secondlow, #first100:hover>#second100,
+#firsthome:hover>#secondhome,#firstcoffee:hover>#secondcoffee{
+  -webkit-transition:all 200ms 0ms ease-out;
+  transition:all 200ms 0ms ease-out;
+}
+
+#firstlow:hover>#thirdlow, #first100:hover>#third100,
+#firsthome:hover>#thirdhome, #firstcoffee:hover>#thirdcoffee{
+  opacity:1;
+  -webkit-transition:all 200ms 0ms ease-out;
+  transition:all 200ms 0ms ease-out;
+}
+
+/*
+#firstlow{
+  position: relative;
+  width:50%;
+  height: 50vh;
+  display: inline-block;
+  overflow: hidden;
 }
 
 
@@ -24,7 +252,6 @@
 
 .killbox .boxes img{
   height: 100%;
-  transition:all linear 1s;
   object-fit: cover;
 }
 .box1a{
@@ -42,6 +269,34 @@
 .box4b{
   object-position: center;
 }
+
+
+.hover-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+background-image: url("select_dawn/IMG_3126cropdown.jpg");
+background-image: url("select_dawn/IMG_4186down.jpg");
+background-image: url("select_homemilk/IMG_5843down.jpg");
+background-image: url("select_coffee2/IMG_5093down.jpg");
+
+
+.container .box img{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+opacity:1;
+object-fit: cover;
+}
+
 
 @media only screen and (min-width: 781px){
   .hover-img{
@@ -61,17 +316,8 @@
     opacity: 1;
   }
 }
-/*
-.container .box img{
-position: absolute;
-top:0;
-left:0;
-width: 100%;
-height: 100%;
-opacity:1;
-object-fit: cover;
-}
-*/
+
+
 @media only screen and (max-width: 780px) {
 
   .fade-out {
@@ -88,4 +334,6 @@ object-fit: cover;
     display: none;
   }
 }
+*/
+
 *
