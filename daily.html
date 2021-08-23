@@ -6,11 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styledaily.css">
   <link rel="stylesheet" href="ghstyle.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+    ga('create', 'UA-19579824-21', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.smoothstate/0.7.2/jquery.smoothState.min.js"></script>
+
+  <script src="transformer.js"></script>
+  <script src="image1.js"></script>
 </head>
   <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-
-
+    <div id="main">
     <nav class="navbar">
       <ul class="menu" id="menu">
         <li><a class="example" href="#저지방">저지방</a></li>
@@ -20,52 +32,69 @@
       </ul>
     </nav>
 
-    <div class="killbox">
-        <div class="boxes">
-        <img class="box1a" src="select_low/IMG_5988darkengray.jpg" width="100%">
-        <a href="low.html">
-          <img class="hover-img box1b" src="select_dawn/IMG_3126cropdown.jpg" width="100%">
-        </a>
+    <div id="home_container" class="killbox anim_element anim_fadeinup">
+        <div id="firstlow" class="boxes">
+          <div id="secondlow"></div>
+          <a href="low.html" id="thirdlow"></a>
         </div>
 
-        <div class="boxes">
-        <img class="box2a" src="select_100/IMG_5988addgreen2.jpg" width="100%">
-        <a href="100.html">
+        <div id="first100" class="boxes">
+          <div id="second100"></div>
+          <a href="100.html" id="third100"></a>
+        </div>
+
+        <div id="firsthome" class="boxes">
+          <div id="secondhome"></div>
+          <a href="homemilk.html" id="thirdhome"></a>
+        </div>
+
+        <div id="firstcoffee" class="boxes">
+          <div id="secondcoffee"></div>
+          <a href="coffee.html" id="thirdcoffee"></a>
+        </div>
+      </div>
+    </div>
+      <!--
+      <div id="firstlow" class="boxes">
+        <img id="secondlow" class="box1a" src="select_low/IMG_5988darkengray.jpg" width="100%">
+        <a href="low.html" id="thirdlow">
+        <img class="hover-img box1b" src="select_dawn/IMG_3126cropdown.jpg" width="100%">
+        </a>
+      </div>
+
+      <div id="first100" class="boxes">
+        <img id="second100" class="box2a" src="select_100/IMG_5988addgreen2.jpg" width="100%">
+        <a href="100.html" id="third100">
         <img class="hover-img box2b" src="select_dawn/IMG_4186down.jpg" width="100%">
         </a>
-        </div>
+      </div>
 
-        <div class="boxes">
-        <img class="box3a" src="select_homemilk/IMG_5988color.jpg" width="100%">
-        <a href="homemilk.html">
-        <img class="hover-img box3b" src="select_homemilk/IMG_5843down.jpg"
-        width="100%">
+      <div id="firsthome" class="boxes">
+        <img id="secondhome" class="box3a" src="select_homemilk/IMG_5988color.jpg" width="100%">
+        <a href="homemilk.html" id="thirdhome">
+        <img class="hover-img box3b" src="select_homemilk/IMG_5843down.jpg" width="100%">
         </a>
-        </div>
+      </div>
 
-        <div class="boxes">
-        <img class="box4a" src="select_coffee2/IMG_4833down.jpg" width="100%">
-        <a href="coffee.html">
-        <img class="hover-img box4b" src="select_coffee2/IMG_5093down.jpg"
-        width="100%">
+      <div id="firstcoffee" class="boxes">
+        <img id="secondcoffee" class="box4a" src="select_coffee2/IMG_4833down.jpg" width="100%">
+        <a href="coffee.html" id="thirdcoffee">
+        <img class="hover-img box4b" src="select_coffee2/IMG_5093down.jpg" width="100%">
         </a>
-        </div>
-
-        <div class="fab"><img src="baseline_close_black_24dp.png"/></div>
-        <div class="box">
-          <a class="fltng btn1" onclick="location.href='tel:111-123-1234'">
-            <img src="baseline_phone_white_36dp.png"/></a>
-          <a class="fltng btn2" onclick="location.href='sms:111-123-1234'">
-            <img src="baseline_mail_white_36dp.png"/></a>
-        </div>
+      </div>
+    -->
+      <div class="fab"><img src="baseline_close_black_24dp.png"/></div>
+      <div class="box">
+        <a class="fltng btn1" onclick="location.href='tel:111-123-1234'">
+          <img src="baseline_phone_white_36dp.png"/></a>
+        <a class="fltng btn2" onclick="location.href='sms:111-123-1234'">
+          <img src="baseline_mail_white_36dp.png"/></a>
       </div>
 
 
       <script src="nav.js"></script>
       <script src="main.js"></script>
-      <script src="image1.js"></script>
       <script src="button.js"></script>
-
 
   </body>
 
