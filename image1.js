@@ -1,3 +1,4 @@
+( function($) {
 var shophovered = false;
 var seminarshovered = false;
 
@@ -21,3 +22,4 @@ var seminarshovered = false;
        seminarshovered = false;
        if (!shophovered) { e.preventDefault(); shophovered = true; }
    })
+   })(jQuery);
