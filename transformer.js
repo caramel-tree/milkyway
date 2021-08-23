@@ -1,7 +1,8 @@
+( function($) {
 if ($(window).width() > 799) $(function(){
     'use strict';
 
-    var $page = $('#main'),
+    var $page = $('#mainn'),
         options = {
             debug: false,
             prefetch: true,
@@ -25,3 +26,4 @@ if ($(window).width() > 799) $(function(){
     },
     smoothState = $page.smoothState(options).data('smoothState');
 });
+})(jQuery);
